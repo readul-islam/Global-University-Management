@@ -1,5 +1,5 @@
 import { RequestHandler } from "express";
-import { createStudent, getStudent } from "../service";
+import { createStudent, getStudent } from "../services";
 import { TUserController } from "../helper/interface";
 
 
