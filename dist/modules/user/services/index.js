@@ -9,17 +9,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const services_1 = require("../services");
-class UserController {
-    createStudent() {
-        return __awaiter(this, void 0, void 0, function* () {
-            const student = yield (0, services_1.createStudent)();
-        });
-    }
-    getStudent() {
-        return __awaiter(this, void 0, void 0, function* () {
-            const student = yield (0, services_1.getStudent)();
-        });
-    }
-}
-exports.default = new UserController;
+exports.createFaculty = exports.createStudent = exports.createAdmin = exports.createSuperAdmin = void 0;
+const createSuperAdmin = (reqBody) => __awaiter(void 0, void 0, void 0, function* () {
+});
+exports.createSuperAdmin = createSuperAdmin;
+const createAdmin = (reqBody) => __awaiter(void 0, void 0, void 0, function* () {
+});
+exports.createAdmin = createAdmin;
+const createStudent = (reqBody) => __awaiter(void 0, void 0, void 0, function* () {
+});
+exports.createStudent = createStudent;
+const createFaculty = (reqBody) => __awaiter(void 0, void 0, void 0, function* () {
+});
+exports.createFaculty = createFaculty;

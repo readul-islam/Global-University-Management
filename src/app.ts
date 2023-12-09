@@ -17,6 +17,6 @@ app.use(cors());
 // App router
 app.use("/api/v1", appRouter);
 
-app.get("/",UserController.createStudent);
+
 
 export default app;
