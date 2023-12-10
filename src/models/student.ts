@@ -5,18 +5,21 @@ const localGuardianSchema = new Schema({}, { _id: false });
 
 const studentSchema = new Schema(
   {
-    id:String,
+    id: String,
     userId: {
-      type: Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "user",
+    },
+    code: {
+      type: String,
+      required: true,
     },
     guardian: guardianSchema,
     localGuardian: localGuardianSchema,
     academicDepartmentId: {
-      type: Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "department",
     },
   },
   { timestamps: true }
 );
-
